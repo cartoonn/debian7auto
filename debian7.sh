@@ -52,8 +52,8 @@ sed -i '$ i\echo "nameserver 8.8.4.4" >> /etc/resolv.conf' /etc/rc.local
 # install wget and curl
 apt-get update;apt-get -y install wget curl;
 
-# set time GMT +7
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+# set time GMT +8
+ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -510,7 +510,7 @@ echo "                              sms/wa; 0856748834                          
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Informasi Server"  | tee -a log-install.txt
-echo "   - Timezone    : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "   - Timezone    : Asia/Kuala_LUmpur (GMT +8)"  | tee -a log-install.txt
 echo "   - Fail2Ban    : [on]"  | tee -a log-install.txt
 echo "   - IPtables    : [on]"  | tee -a log-install.txt
 echo "   - Auto-Reboot : [off]"  | tee -a log-install.txt
