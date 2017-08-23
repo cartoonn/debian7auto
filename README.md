@@ -1,1 +1,1 @@
-# Kelinci Percobaan
+# Debian7 32bit
