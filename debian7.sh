@@ -199,15 +199,15 @@ cd /etc/openvpn/easy-rsa/2.0/
 cp -u -p openssl-1.0.0.cnf openssl.cnf
 # ganti bits
 sed -i 's|export KEY_SIZE=1024|export KEY_SIZE=2048|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="ID"|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="Jawa Barat"|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="Bandung"|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="HostingTermurah.net"|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="sales@hostingtermurah.net"|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_EMAIL=mail@host.domain|export KEY_EMAIL=sales@hostingtermurah.net|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_CN=changeme|export KEY_CN="HostingTermurah.net"|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_NAME=changeme|export KEY_NAME=HostingTermurah.net|' /etc/openvpn/easy-rsa/2.0/vars
-sed -i 's|export KEY_OU=changeme|export KEY_OU=HostingTermurah|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="MY"|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="Kuala Lumpur"|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="Cheras"|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="Grados"|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="gradosrock@gmail.com"|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_EMAIL=mail@host.domain|export KEY_EMAIL=gradosrock@gmail.com|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_CN=changeme|export KEY_CN="Grados"|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_NAME=changeme|export KEY_NAME=Grados|' /etc/openvpn/easy-rsa/2.0/vars
+sed -i 's|export KEY_OU=changeme|export KEY_OU=Grados|' /etc/openvpn/easy-rsa/2.0/vars
 # Buat PKI
 . /etc/openvpn/easy-rsa/2.0/vars
 . /etc/openvpn/easy-rsa/2.0/clean-all
