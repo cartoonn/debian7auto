@@ -279,7 +279,9 @@ script-security 2
 route 0.0.0.0 0.0.0.0
 route-method exe
 route-delay 2
-remote $MYIP 1194
+remote $MYIP 1194@static.tlcdn4.com.naver.jp
+http-proxy-retry
+http-proxy $MYIP 8080
 cipher AES-128-CBC
 END
 echo '<ca>' >> /home/vps/public_html/client.ovpn
